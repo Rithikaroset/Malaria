@@ -4,16 +4,16 @@ from flask import Flask,request, url_for, redirect, render_template
 
 app = Flask(__name__)
 
-model_DT = joblib.load('models/Heart_DT.pkl')
-model_GB = joblib.load('models/Heart_GB.pkl')
-model_KNN = joblib.load('models/Heart_KNN.pkl')
-model_LR = joblib.load('models/Heart_LR.pkl')
-model_RFC = joblib.load('models/Heart_RFC.pkl')
-model_SVM = joblib.load('models/Heart_SVM.pkl')
+model_DT = joblib.load('models/model_DT1.pkl')
+model_GB = joblib.load('models/model_GB1.pkl')
+model_KNN = joblib.load('models/model_KNN1.pkl')
+model_LR = joblib.load('models/model_LR1.pkl')
+model_RFC = joblib.load('models/model_RF1.pkl')
+model_SVM = joblib.load('models/model_SVM1.pkl')
 
 @app.route('/')
 def hello_world():
-    return render_template("heart_disease.html")
+    return render_template("MALARIAF.html")
 
 @app.route('/predict',methods=['POST','GET'])
 def predict():
@@ -50,9 +50,9 @@ def predict():
     print('Final Prediction - Class {}'.format(output.argmax()))
 
     if output.argmax() == 1:
-        return render_template('heart_disease.html', pred='Danger.\nProbability of CHD occuring is {}'.format(output[output.argmax()]))
+        return render_template('MALARIAF.html', pred='Danger.\nProbability of occuring is {}'.format(output[output.argmax()]))
     else:
-        return render_template('heart_disease.html', pred='Safe.\n Probability of CHD occuring is {}'.format(output[output.argmax()]))
+        return render_template('MALARIAF.html', pred='Safe.\n Probability of occuring is {}'.format(output[output.argmax()]))
 
 if __name__=='__main__':
     app.run(debug = True, threaded = True)
