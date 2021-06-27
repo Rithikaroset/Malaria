@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=POSVPFR93kUftcm9pmsVRq0uLlyn3lNjxE3etE_ioGTCetc9YoikANI16dqRv-VaGqSk909FNEjguZ19RY142PqOnfaUcHV-hRQ4jgSMGMyfgLDitCfyTpHtVST48nLfyOh3ZJytYjN-PEZS8EKN1RQmXoKXpPIgsTrYbZh76pfFff1x2NgQNw_gmH5eXZ_KhhZJhVFZbDImtEosDvfUkqEJY-LuzrXVIwq8DQ7fvqYjPo2PWj9ifXnZXZrhmGnjqI3ZbroYTbz6oYl14ekxGkfr_XxVUqxMkXdIuCugInsJJlxz0o7DdpROkanjoleG7HYb3JNogKJglnovGf17d4qVw3DsTSWloO-HiTU9DsKHWTLjZ28Z_hNJrOI0Kr00LuE5mZb2yVR_fvuUPSH3U8YQM10XMQwUJKTDISTP6ehT_pg2DebemgW3QRhKkKFM0ojLltRi5dV-H0ejJ0a0_74haRC6C972bF1x4-ZpGAiyh3kp20NkDSDXLadEaX9vMO7ZlAvjDvCFUVrzK8cSk8aea6xgL84ZJ5MKYbKLXZA5-XOMJgYsCycmwL1rM6X_UYbdQIMeBUXWSyGIgD6q5jUWv41CxpPCasiyq0GrJg2-hnS2SFbzs8Di_9_Ae5Poy340zCXjJw6Xs8AxaxN5auJJi_tOXcHUwXbsb9r98elcYa6PMhKkqpOB17_SpCLXx1Q6JALxDeoPawgQ83bSJNFW8oO6REXgN65hsUs6fV5l3HtT8gvEHZFT92v6HRVmIQt7Vw_X_pQFS3gKHb8AlFgXLtKtm5q-SSmQ-kh4x7hvXUkvSwFKZI1XqqguoLs3TqVycgoJm6T5X4JwJzUOtXqzqwwdUuNmP99t4ZtVu8I9BeKJPHmqVGdUyEbjKIFeVUSAZDnLfTJ3HpxVPyGZCKi41MfeBY41xGPs9lD40Aw0XxPiuGNWpYUpkQ4jurqGF3VEURukaW0c2Y6voJKtOSNw3l2GJSwAGbxxNis7SQSdEmQb-SQwnQNI9omwU8NV52kffli8Q05fVYQDiHyV6ZozCeseOxmnLSZxvV0hB2kXdfrahZUZ69i8LXaMGkTNs80W9SPoc2ZRi1xlLmeQcE_50gfuCXNw2T7sRLPDOJpp7nZeVnzb04BFuGvvDRNPmdWqTNKJ2qkPT5Br7SV5ikOmDb9V3O49DNGv2FQhynY" nonce="d44bfcfc4bec2200700ac8285d0294b6" charset="UTF-8"></script></head>
+  <body style="background: repeating-linear-gradient(
+      50deg,
+    #b3ffff,
+    #ffffb3,
+  #b3ffb3
+     	
+    );
+  text-align:center;
+  height:auto;
+  padding-bottom:20px;">
+  <div id="main">
+    <div id="heading"  style="text-align:center;
+  padding-top:3vw;
+  padding-bottom:1vw;
+  background-color:white;
+  opacity:0.35;
+  height:auto;
+  width:100%;
+  font-size:1.5em;
+  text-decoration:underline;">
+      <h1 style="color:blue;opacity:1;">MALARIA DISEASE PREDICTION</h1>
+      </div>
+      <div id="description" style="text-align:center;
+  padding-top:0.5vw;
+  padding-bottom:0.5vw;
+  background-color:#e6ffff;
+  font-size:1.5em;
+  width:100%;">
+        <p>To predict the probability of Malaria</p> 
+      </div><br><br>
+  
+    <div id="form"  style="  padding-top:4vw;
+  padding-bottom:4vw;
+  text-align:center;
+  margin-top: 20px;
+  margin-right:10%;
+  margin-left:10%;
+  margin-bottom:20px;
+  box-shadow:5px 5px 5px 3px rgb(51, 51, 51);
+  background:white;
+  color:black;
+  font-weight:bold;
+  width:5vw autofill;
+  position:relative;
+  height:auto; border-radius:50px;">
+      <form action='/predict' method="post">
+        <div id="age" style="font-size:20px; 
+ font-family:Arial,monospace;">
+        <label for="Age">Enter your Age</label><br>
+        <input type="number"  id="Age" required style="width:65%;
+  border-radius:50px;
+  font-size:20px;"">
+        </div><br>
+        <div id="Sex" style="font-size:20px; 
+ font-family:Arial,monospace;">
+        <label for="gender">Gender</label><br>
+        <input type="number" id="gender" placeholder=" enter 0 for female and 1 for male" min="0" max="1" required style="width:65%;
+  border-radius:50px;
+  font-size:20px;">
+        </div><br>
+        <div id="temp" style=" font-size:20px; 
+ font-family:Arial,monospace;">
+        <label for="Temperature">Temperature in  Fahrenheit </label><br>
+        <input type="number" id="Temperature" required style="width:65%;
+  border-radius:50px;
+  font-size:20px;">
+        </div><br>
+        <div id="sbp" style=" font-size:20px; 
+ font-family:Arial,monospace;">
+        <label for="systolic">Systolic blood pressure in MM/hg  </label><br>
+        <input type="number" id="systolic" required  style="width:65%;
+  border-radius:50px;
+  font-size:20px;
+">
+        </div><br>
+        <div id="dbp" style=" font-size:20px; 
+ font-family:Arial,monospace;
+ ">
+        <label for="diastolic">Diastolic blood pressure in MM/hg  </label><br>
+        <input type="number" id="diastolic" required style="  width:65%;
+  border-radius:50px;
+  font-size:20px;
+">
+        </div><br>
+        <div id="HR" style="font-size:20px; 
+ font-family:Arial,monospace;
+  ">
+        <label for="heart_rate">Heart Rate in beats/min  </label><br>
+        <input type="number" id="heart_rate" required style=" width:65%;
+  border-radius:50px;
+  font-size:20px;
+ " >
+        </div><br>
+        <div id="travel" style="font-size:20px; 
+ font-family:Arial,monospace;
+">
+        <label for="travel_history">Travel History to Malaria endemic areas <i class="fa fa-question-circle"  title="such as mangalore or parts of shimoga" ></i></label><br>
+        <input type="number" id="travel_history" placeholder="enter 1 for yes and 0 for no" min="0" max="1" required style=" width:65%;
+  border-radius:50px;
+  font-size:20px;
+">
+        </div><br>
+        <div id="clinical1" style="  font-size:20px; 
+ font-family:Arial,monospace;
+">
+        <label for="symptoms1">Severe fever with chills and sweating </label><br>
+        <input type="number"  id="symptoms1" placeholder="enter 1 for presence and 0 for absence" max="1" min="0" required style=" width:65%;
+  border-radius:50px;
+  font-size:20px;">
+        </div><br>
+        <div id="clinical2" style="font-size:20px; 
+ font-family:Arial,monospace;">
+        <label for="symptoms2">Severe fatigue  with severe backpain/ Respiratory symptoms such dry coughand Nausea,vomitting ,abdominal pain </label><br>
+        <input type="number"  id="symptoms2" placeholder="enter 1 for presence and 0 for absence" max="1" min="0" required style="  width:65%;
+  border-radius:50px;
+  font-size:20px;
+">
+        </div><br>
+        <div id="spleen" style="   font-size:20px; 
+ font-family:Arial,monospace;
+">
+        <label for="abdominal_scan">Swelling near the pelvic region</label><br>
+        <input type="number"  id="abdominal_scan" placeholder="enter 1 for presence and 0 for absence" max="1" min="0" required style="  width:65%;
+  border-radius:50px;
+  font-size:20px;
+">
+        </div><br>
+        <div id="clinical3" style=" font-size:20px; 
+ font-family:Arial,monospace;
+ ">
+        <label for="test">Peripheral blood smear test </label><i class="fa fa-question-circle"  title="costs about 150 rupees "></i><br>
+        <input type="number"  id="test" placeholder="enter 1 for presence of microscopy malaria parasites else 0 for absence" max="1" min="0" required style="  width:65%;
+  border-radius:50px;
+  font-size:20px;
+">
+ </div><br>
+  <div id="button">
+    <button type="submit" id="b" style=" border-radius:60px;
+  font-size:20px;
+  height:50px;
+  background-color:black;
+  color:white;
+">Predict Probability</button>
+  </div>
+     </div>
+      </form>
+    </div>
+  <br>
+  <br>
+  {{pred}}
+  </div>
+  </body>
+</html>
